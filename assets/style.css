@@ -1,0 +1,187 @@
+/* Light Theme - Professional Style */
+:root {
+    --primary-color: #1e3799;
+    --secondary-color: #4a69bd;
+    --background-color: #e06b6b;
+    --sidebar-background: #f8f9fa;
+    --card-background: #ffffff;
+    --text-color: #262730;
+    --border-color: #e1e5e9;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --error-color: #dc3545;
+    --info-color: #17a2b8;
+}
+
+/* Main container styling */
+.main .block-container {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Sidebar styling */
+section[data-testid="stSidebar"] {
+    background-color: var(--sidebar-background) !important;
+    border-right: 1px solid var(--border-color);
+}
+
+section[data-testid="stSidebar"] .stRadio label {
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin: 6px 0;
+    color: var(--text-color);
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+section[data-testid="stSidebar"] .stRadio label:hover {
+    background-color: #e9ecef;
+    transform: translateX(5px);
+}
+
+section[data-testid="stSidebar"] .stRadio [data-baseweb="radio"] div:first-child {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Button styling */
+.stButton button {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.stButton button:hover {
+    background-color: var(--secondary-color) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Download button specific */
+.stDownloadButton button {
+    background-color: #5a8f66 !important;
+}
+
+.stDownloadButton button:hover {
+    background-color: #218838 !important;
+}
+
+/* Form styling */
+.stForm {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--card-background);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Text input styling */
+.stTextInput input, .stSelectbox div, .stNumberInput input {
+    border: 1px solid var(--border-color) !important;
+    border-radius: 6px !important;
+    padding: 8px 12px !important;
+}
+
+.stTextInput input:focus, .stSelectbox div:focus, .stNumberInput input:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 2px rgba(30, 55, 153, 0.1) !important;
+}
+
+/* Dataframe styling */
+.stDataFrame {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+/* Alert/Message styling */
+.stAlert {
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+.stSuccess {
+    background-color: rgba(40, 167, 69, 0.1) !important;
+    border-color: var(--success-color) !important;
+    color: var(--text-color) !important;
+}
+
+.stError {
+    background-color: rgba(220, 53, 69, 0.1) !important;
+    border-color: var(--error-color) !important;
+    color: var(--text-color) !important;
+}
+
+.stWarning {
+    background-color: rgba(255, 193, 7, 0.1) !important;
+    border-color: var(--warning-color) !important;
+    color: var(--text-color) !important;
+}
+
+.stInfo {
+    background-color: rgba(23, 162, 184, 0.1) !important;
+    border-color: var(--info-color) !important;
+    color: var(--text-color) !important;
+}
+
+/* Header styling */
+h1, h2, h3 {
+    color: var(--primary-color) !important;
+    font-weight: 600 !important;
+}
+
+/* Radio button group styling */
+.stRadio > div {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Slider styling */
+.stSlider [data-baseweb="slider"] {
+    color: var(--primary-color) !important;
+}
+
+/* File uploader styling */
+.stFileUploader {
+    border: 2px dashed var(--border-color) !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+}
+
+.stFileUploader:hover {
+    border-color: var(--primary-color) !important;
+}
+
+/* Card-like sections */
+.css-1r6slb0 {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
